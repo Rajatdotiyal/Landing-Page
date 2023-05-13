@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faishon Sense</title>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        header {
+            /* border: 2px solid red; */
+            /* background-color: #65a190; */
+            color: #0d1212;
+            text-align: center;
+            font-family: 'Delicious Handrawn', cursive;
+            cursor: context-menu;
+            font-size: 35px;
+            margin-top: 35px;
+            letter-spacing: 3px;
+
+        }
+
+
+        .navbar {
+            /* border: 2px solid green;  */
+            margin-top: 39px;
+
+        }
+
+        .top {
+            display: flex;
+
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-size: 18px;
+            font-family: 'Balsamiq Sans', cursive;
+
+        }
+
+        .top li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .top li a:hover {
+            color: rgb(125, 38, 206);
+            font-size: 20px;
+
+        }
+
+        .middle {
+            display: flex;
+            /* border: 2px solid red; */
+            /* background-color: beige; */
+            width: 80%;
+            gap: 2em;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: auto;
+            margin-top: 24px;
+            align-items: center;
+
+        }
+
+        .middle img {
+            width: 48vh;
+            height: 66vh;
+            
+            box-shadow: 8px 7px 16px 8px #3b2828;
+            transition: all;
+            transition-duration: .4s;
+
+        }
+
+
+
+        .middle img:hover {
+            transform: scale(1.1);
+        }
+
+        .aside1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .heading2 {
+            margin-top: 45px;
+            cursor: context-menu;
+        }
+
+        .heading2 h1 {
+
+            font-family: 'Delicious Handrawn', cursive;
+            font-size: 35px;
+            text-align: center;
+            letter-spacing: 3px;
+
+        }
+
+        .aside1 {
+            /* border: 2px solid maroon; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+            align-items: center;
+
+        }
+
+        .subimg1 img {
+            width: 200px;
+            height: 200px;
+        }
+
+
+        .subimg1 div {
+            
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .subimg1 div:hover {
+            color: rgb(109, 109, 159);
+            cursor: pointer;
+        }
+
+        .aside2 {
+            /* border: 2px solid maroon; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+            align-items: center;
+
+        }
+
+        .subimg2 img {
+            width: 200px;
+            height: 200px;
+        }
+
+
+        .subimg2 div {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Balsamiq Sans', cursive;
+
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .subimg2 div:hover {
+            color: rgb(109, 109, 159);
+            cursor: pointer;
+        }
+
+
+
+        .aside3 {
+            /* border: 2px solid maroon; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+            align-items: center;
+
+        }
+
+        .subimg3 img {
+            width: 200px;
+            height: 200px;
+        }
+
+
+        .subimg3 div {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 600;
+            line-height: 20px;
+        }
+
+        .subimg3 div:hover {
+            color: rgb(109, 109, 159);
+            cursor: pointer;
+        }
+
+
+        .foot {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            background-color: white;
+            height: 40vh;
+        }
+
+        .foot h1 {
+            font-family: 'Delicious Handrawn', cursive;
+
+        }
+
+        .foot div {
+            font-family: 'Balsamiq Sans', cursive;
+            margin-top: 20px;
+            font-weight: bold;
+
+        }
+
+        .foot label {
+            cursor: pointer;
+        }
+
+        .foot input {
+            padding: 6px;
+            border-radius: 22px;
+            font-weight: bold;
+
+        }
+
+        .foot button {
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 22px;
+            padding: 6px;
+            color: white;
+            background-color: rgb(9, 9, 9);
+
+        }
+
+        .foot button:hover {
+            background-color: #171f1f;
+        }
+
+        .foot span {
+            margin-top: 15px;
+        }
+            
+        
+        
+    </style>
+</head>
+
+
+
+
+<body>
+    <header>
+        <h1>Faishon Sense</h1>
+    </header>
+    <div class="navbar">
+        <ul class="top">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Faishon</a></li>
+            <li> <a href="#">Fitness</a></li>
+            <li> <a href="#">Lifestyle</a></li>
+            <li> <a href="#">Interiors</a></li>
+            <li> <a href="#">Shop</a></li>
+        </ul>
+    </div>
+
+
+
+    <section>
+        <div class="middle">
+
+            <img src="https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="">
+            <img src="https://images.unsplash.com/photo-1613991917190-e68d404b2617?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                alt="">
+        </div>
+    </section>
+
+
+
+    <div class="heading2">
+        <h1>Shopping</h1>
+    </div>
+
+
+
+    <div class="aside1">
+        <div class="subimg1">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                alt="Footware">
+            <div>Footware</div>
+        </div>
+
+        <div class="subimg1">
+            <img src="https://images.pexels.com/photos/2249249/pexels-photo-2249249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="clothes">
+            <div>Clothes</div>
+        </div>
+
+        <div class="subimg1">
+            <img src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=442&q=80"
+                alt="watches">
+            <div>Watches</div>
+        </div class="subimg1">
+
+        <div class="subimg1">
+            <img src="https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80"
+                alt="hoodies">
+            <div>Hoodies</div>
+
+
+        </div>
+
+        <div class="subimg1">
+            <img src="https://images.unsplash.com/photo-1598032895397-b9472444bf93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                alt="shirts">
+            <div>Shirts</div>
+        </div>
+
+    </div>
+    <div class="heading2">
+        <h1>Interiors</h1>
+    </div>
+    <div class="aside2">
+        <div class="subimg2">
+            <img src="https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80"
+                alt="Furnitures">
+            <div>Furnitures</div>
+        </div>
+
+        <div class="subimg2">
+            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1268&q=80"
+                alt="Kitchen">
+            <div>Kitchen</div>
+        </div>
+
+        <div class="subimg2">
+            <img src="https://images.unsplash.com/photo-1507808425661-dec7b2114f15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1258&q=80"
+                alt="Lights">
+            <div>Lights</div>
+        </div>
+
+        <div class="subimg2">
+            <img src="https://images.unsplash.com/photo-1617806265182-7b3f847f0b75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                alt="home decor">
+            <div>Home Decor</div>
+
+
+        </div>
+
+        <div class="subimg2">
+            <img src="https://images.unsplash.com/photo-1465161191540-aac346fcbaff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="Frames">
+            <div>Frames</div>
+        </div>
+    </div>
+    <div class="heading2">
+        <h1>Faishon</h1>
+    </div>
+
+
+    <div class="aside3">
+        <div class="subimg3">
+            <img src="https://images.unsplash.com/photo-1567473810954-507d59716c25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt="Furnitures">
+            <div>Glasses</div>
+        </div>
+
+        <div class="subimg3">
+            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+                alt="Kitchen">
+            <div>Skin Care</div>
+        </div>
+
+        <div class="subimg3">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                alt="Lights">
+            <div>Make Up</div>
+        </div>
+
+        <div class="subimg3">
+            <img src="https://images.unsplash.com/photo-1591348278900-019a8a2a8b1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+                alt="home decor">
+            <div>Bags</div>
+
+
+        </div>
+
+        <div class="subimg3">
+            <img src="https://images.unsplash.com/photo-1557827983-012eb6ea8dc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                alt="Frames">
+            <div>Perfumes</div>
+        </div>
+    </div>
+   
+    <div class="foot">
+        <h1>Faishon sense</h1>
+        <div>
+            <label for="Email">Email:</label>
+            <input id="Email" type="email" placeholder="Enter your email">
+
+        </div>
+        <div>
+            <label for="Message">Message:</label>
+            <input id="Message" type="text" placeholder="Message">
+        </div>
+        <div>
+            <button onclick="alert('Thanks for Submit!!!')">Submit</button>
+        </div>
+
+        <span>
+
+            Copyright © 2012 - 2023 FaishonSense®. All rights reserved.
+        </span>
+
+    </div>
+</body>
+
+</html>
